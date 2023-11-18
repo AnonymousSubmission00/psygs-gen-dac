@@ -11,9 +11,9 @@ dependency-free data preprocessed with coloring algorithms.
 | scripts to test the software implementation of parallel SyGS | software_tests/main |
 
 ## Requirements:
-* Java Development Kit 11
 * Scala 2.13.10
-* Scala sbt
+* Scala sbt 1.8.3
+The specified version numbers grant the best compatibility
 
 ## Chisel tests
 To run the chisel tests of the generator, run `sbt test`
