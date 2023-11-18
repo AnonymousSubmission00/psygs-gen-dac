@@ -1,0 +1,1596 @@
+matrix path: ../../resources/matrices/100k_700k/bodyy4.mtx
+vector path: ../../resources/vectors/100k_700k/bodyy4.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         0.751273 s
+Average clock cycles: 1.94878e+09
+Average iterations:   1285
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         0.7743 s
+Average clock cycles: 2.00851e+09
+Average iterations:   2316
+Average speedup:      0.961362
+Theoretical speedup:  1
+Overhead:             0.00953943
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         0.757596 s
+Average clock cycles: 1.96518e+09
+Average iterations:   2316
+Average speedup:      0.983467
+Theoretical speedup:  1.99984
+Overhead:             0.00839416
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         0.60915 s
+Average clock cycles: 1.58012e+09
+Average iterations:   2316
+Average speedup:      1.2214
+Theoretical speedup:  3.99784
+Overhead:             0.00790879
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.693686 s
+Average clock cycles: 1.7994e+09
+Average iterations:   2316
+Average speedup:      1.07287
+Theoretical speedup:  7.99174
+Overhead:             0.0087313
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.98878 s
+Average clock cycles: 2.56487e+09
+Average iterations:   2316
+Average speedup:      0.754768
+Theoretical speedup:  15.973
+Overhead:             0.00876977
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.730702 s
+Average clock cycles: 1.89542e+09
+Average iterations:   2316
+Average speedup:      1.01803
+Theoretical speedup:  31.8709
+Overhead:             0.00966642
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         0.478671 s
+Average clock cycles: 1.24166e+09
+Average iterations:   2316
+Average speedup:      1.54436
+Theoretical speedup:  63.5425
+Overhead:             0.0103723
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         0.894047 s
+Average clock cycles: 2.31913e+09
+Average iterations:   2049
+Average speedup:      0.835691
+Theoretical speedup:  1
+Overhead:             0.0100974
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         0.537355 s
+Average clock cycles: 1.39388e+09
+Average iterations:   2049
+Average speedup:      1.38537
+Theoretical speedup:  1.91877
+Overhead:             0.00879078
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         0.308158 s
+Average clock cycles: 7.99353e+08
+Average iterations:   2049
+Average speedup:      2.39951
+Theoretical speedup:  3.58578
+Overhead:             0.0088405
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.207501 s
+Average clock cycles: 5.38253e+08
+Average iterations:   2049
+Average speedup:      3.53644
+Theoretical speedup:  6.20234
+Overhead:             0.00862087
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.155763 s
+Average clock cycles: 4.04044e+08
+Average iterations:   2049
+Average speedup:      4.67503
+Theoretical speedup:  9.75192
+Overhead:             0.0085834
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.137599 s
+Average clock cycles: 3.56929e+08
+Average iterations:   2049
+Average speedup:      5.27077
+Theoretical speedup:  13.6656
+Overhead:             0.00869214
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         0.133294 s
+Average clock cycles: 3.4576e+08
+Average iterations:   2049
+Average speedup:      5.43494
+Theoretical speedup:  16.7705
+Overhead:             0.00887322
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         0.597252 s
+Average clock cycles: 1.54926e+09
+Average iterations:   1285
+Average speedup:      1.24404
+Theoretical speedup:  1
+Overhead:             0.00884515
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         1.24136 s
+Average clock cycles: 3.22006e+09
+Average iterations:   1285
+Average speedup:      0.602312
+Theoretical speedup:  1.96766
+Overhead:             0.00792525
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         1.37311 s
+Average clock cycles: 3.56181e+09
+Average iterations:   1285
+Average speedup:      0.544517
+Theoretical speedup:  3.79526
+Overhead:             0.00877994
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         2.1056 s
+Average clock cycles: 5.46187e+09
+Average iterations:   1285
+Average speedup:      0.355503
+Theoretical speedup:  7.1105
+Overhead:             0.0101988
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         3.26139 s
+Average clock cycles: 8.45995e+09
+Average iterations:   1285
+Average speedup:      0.229672
+Theoretical speedup:  12.1476
+Overhead:             0.012886
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         4.89963 s
+Average clock cycles: 1.27095e+10
+Average iterations:   1285
+Average speedup:      0.152909
+Theoretical speedup:  17.6543
+Overhead:             0.0180733
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         6.25717 s
+Average clock cycles: 1.62309e+10
+Average iterations:   1285
+Average speedup:      0.119661
+Theoretical speedup:  22.3781
+Overhead:             0.0281954
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/bodyy5.mtx
+vector path: ../../resources/vectors/100k_700k/bodyy5.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         3.82259 s
+Average clock cycles: 9.91568e+09
+Average iterations:   8227
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         4.04229 s
+Average clock cycles: 1.04856e+10
+Average iterations:   14942
+Average speedup:      0.944404
+Theoretical speedup:  1
+Overhead:             0.00139349
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         6.56865 s
+Average clock cycles: 1.70389e+10
+Average iterations:   14942
+Average speedup:      0.581479
+Theoretical speedup:  1.99989
+Overhead:             0.00137338
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         3.55722 s
+Average clock cycles: 9.22733e+09
+Average iterations:   14942
+Average speedup:      1.07305
+Theoretical speedup:  3.9983
+Overhead:             0.00134344
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         7.93221 s
+Average clock cycles: 2.05759e+10
+Average iterations:   14942
+Average speedup:      0.481569
+Theoretical speedup:  7.99314
+Overhead:             0.00145673
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         7.1017 s
+Average clock cycles: 1.84216e+10
+Average iterations:   14942
+Average speedup:      0.537779
+Theoretical speedup:  15.9744
+Overhead:             0.00167355
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         5.62168 s
+Average clock cycles: 1.45825e+10
+Average iterations:   14942
+Average speedup:      0.679039
+Theoretical speedup:  31.8897
+Overhead:             0.00202137
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         4.1335 s
+Average clock cycles: 1.07222e+10
+Average iterations:   14942
+Average speedup:      0.923074
+Theoretical speedup:  63.6225
+Overhead:             0.00199928
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         6.37336 s
+Average clock cycles: 1.65323e+10
+Average iterations:   13825
+Average speedup:      0.599434
+Theoretical speedup:  1
+Overhead:             0.00178639
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         5.9774 s
+Average clock cycles: 1.55052e+10
+Average iterations:   13825
+Average speedup:      0.639118
+Theoretical speedup:  1.93508
+Overhead:             0.00146719
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         3.14234 s
+Average clock cycles: 8.15114e+09
+Average iterations:   13825
+Average speedup:      1.21507
+Theoretical speedup:  3.61231
+Overhead:             0.0014325
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         1.96284 s
+Average clock cycles: 5.09156e+09
+Average iterations:   13825
+Average speedup:      1.94388
+Theoretical speedup:  6.29074
+Overhead:             0.00142174
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         1.33271 s
+Average clock cycles: 3.45702e+09
+Average iterations:   13825
+Average speedup:      2.86047
+Theoretical speedup:  10.3524
+Overhead:             0.00138797
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         1.12354 s
+Average clock cycles: 2.91444e+09
+Average iterations:   13825
+Average speedup:      3.39129
+Theoretical speedup:  14.5129
+Overhead:             0.00139936
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         1.16168 s
+Average clock cycles: 3.01336e+09
+Average iterations:   13825
+Average speedup:      3.28031
+Theoretical speedup:  19.8924
+Overhead:             0.00145438
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         3.87321 s
+Average clock cycles: 1.0047e+10
+Average iterations:   8227
+Average speedup:      0.985387
+Theoretical speedup:  1
+Overhead:             0.00158592
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         8.36071 s
+Average clock cycles: 2.16875e+10
+Average iterations:   8227
+Average speedup:      0.456926
+Theoretical speedup:  1.97249
+Overhead:             0.0013512
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         8.82065 s
+Average clock cycles: 2.28805e+10
+Average iterations:   8227
+Average speedup:      0.433081
+Theoretical speedup:  3.81754
+Overhead:             0.00152985
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         16.14 s
+Average clock cycles: 4.18668e+10
+Average iterations:   8227
+Average speedup:      0.236738
+Theoretical speedup:  7.11978
+Overhead:             0.00179563
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         21.0785 s
+Average clock cycles: 5.46771e+10
+Average iterations:   8227
+Average speedup:      0.18127
+Theoretical speedup:  12.6983
+Overhead:             0.00241397
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         30.7789 s
+Average clock cycles: 7.98397e+10
+Average iterations:   8227
+Average speedup:      0.124136
+Theoretical speedup:  18.1371
+Overhead:             0.00384525
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         46.3871 s
+Average clock cycles: 1.20327e+11
+Average iterations:   8227
+Average speedup:      0.0823213
+Theoretical speedup:  24.5548
+Overhead:             0.0125287
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/bodyy6.mtx
+vector path: ../../resources/vectors/100k_700k/bodyy6.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         27.8672 s
+Average clock cycles: 7.22867e+10
+Average iterations:   57254
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         28.7581 s
+Average clock cycles: 7.45977e+10
+Average iterations:   102840
+Average speedup:      0.96881
+Theoretical speedup:  1
+Overhead:             0.000224026
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         28.5913 s
+Average clock cycles: 7.4165e+10
+Average iterations:   102840
+Average speedup:      0.974497
+Theoretical speedup:  1.9997
+Overhead:             0.000185479
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         24.1134 s
+Average clock cycles: 6.25495e+10
+Average iterations:   102840
+Average speedup:      1.15541
+Theoretical speedup:  3.99798
+Overhead:             0.000195564
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         59.2583 s
+Average clock cycles: 1.53714e+11
+Average iterations:   102840
+Average speedup:      0.470219
+Theoretical speedup:  7.99217
+Overhead:             0.000212817
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         51.2379 s
+Average clock cycles: 1.3291e+11
+Average iterations:   102840
+Average speedup:      0.5438
+Theoretical speedup:  15.973
+Overhead:             0.000264097
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         42.8804 s
+Average clock cycles: 1.11231e+11
+Average iterations:   102840
+Average speedup:      0.649765
+Theoretical speedup:  31.8779
+Overhead:             0.000276832
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         35.8311 s
+Average clock cycles: 9.2945e+10
+Average iterations:   102840
+Average speedup:      0.777562
+Theoretical speedup:  63.4108
+Overhead:             0.000288899
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         46.3819 s
+Average clock cycles: 1.20313e+11
+Average iterations:   96221
+Average speedup:      0.60077
+Theoretical speedup:  1
+Overhead:             0.000230335
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         26.3563 s
+Average clock cycles: 6.83675e+10
+Average iterations:   96221
+Average speedup:      1.05717
+Theoretical speedup:  1.97952
+Overhead:             0.000212932
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         14.3218 s
+Average clock cycles: 3.71503e+10
+Average iterations:   96221
+Average speedup:      1.94527
+Theoretical speedup:  3.73615
+Overhead:             0.000202889
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         13.7562 s
+Average clock cycles: 3.56832e+10
+Average iterations:   96221
+Average speedup:      2.02522
+Theoretical speedup:  6.4708
+Overhead:             0.000200727
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         10.0549 s
+Average clock cycles: 2.60821e+10
+Average iterations:   96221
+Average speedup:      2.77045
+Theoretical speedup:  10.5594
+Overhead:             0.000207958
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         8.4711 s
+Average clock cycles: 2.19738e+10
+Average iterations:   96221
+Average speedup:      3.28818
+Theoretical speedup:  14.6832
+Overhead:             0.000211162
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         8.77069 s
+Average clock cycles: 2.27509e+10
+Average iterations:   96221
+Average speedup:      3.17591
+Theoretical speedup:  20.5158
+Overhead:             0.000247511
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         25.6582 s
+Average clock cycles: 6.65568e+10
+Average iterations:   57254
+Average speedup:      1.08586
+Theoretical speedup:  1
+Overhead:             0.00019838
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         52.6562 s
+Average clock cycles: 1.36589e+11
+Average iterations:   57254
+Average speedup:      0.529173
+Theoretical speedup:  1.97932
+Overhead:             0.000198988
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         70.0193 s
+Average clock cycles: 1.81628e+11
+Average iterations:   57254
+Average speedup:      0.397959
+Theoretical speedup:  3.86142
+Overhead:             0.000214408
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         102.322 s
+Average clock cycles: 2.65421e+11
+Average iterations:   57254
+Average speedup:      0.272329
+Theoretical speedup:  7.32406
+Overhead:             0.000252992
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         122.938 s
+Average clock cycles: 3.18899e+11
+Average iterations:   57254
+Average speedup:      0.226659
+Theoretical speedup:  13.3559
+Overhead:             0.000322012
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         179.428 s
+Average clock cycles: 4.65431e+11
+Average iterations:   57254
+Average speedup:      0.1553
+Theoretical speedup:  20.3025
+Overhead:             0.00047773
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         288.794 s
+Average clock cycles: 7.49124e+11
+Average iterations:   57254
+Average speedup:      0.096488
+Theoretical speedup:  30.2193
+Overhead:             0.000746567
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/Dubcova1.mtx
+vector path: ../../resources/vectors/100k_700k/Dubcova1.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         2.05623 s
+Average clock cycles: 5.3338e+09
+Average iterations:   4184
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         2.27094 s
+Average clock cycles: 5.89077e+09
+Average iterations:   4555
+Average speedup:      0.90253
+Theoretical speedup:  1
+Overhead:             0.00357443
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         4.42677 s
+Average clock cycles: 1.14829e+10
+Average iterations:   4555
+Average speedup:      0.463729
+Theoretical speedup:  1.99969
+Overhead:             0.00357407
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         2.71159 s
+Average clock cycles: 7.0338e+09
+Average iterations:   4555
+Average speedup:      0.756036
+Theoretical speedup:  3.99844
+Overhead:             0.0039669
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         2.2041 s
+Average clock cycles: 5.71738e+09
+Average iterations:   4555
+Average speedup:      0.929412
+Theoretical speedup:  7.99422
+Overhead:             0.00403434
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         2.05417 s
+Average clock cycles: 5.32846e+09
+Average iterations:   4555
+Average speedup:      0.996222
+Theoretical speedup:  15.9678
+Overhead:             0.00479445
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         1.70608 s
+Average clock cycles: 4.42552e+09
+Average iterations:   4555
+Average speedup:      1.19781
+Theoretical speedup:  31.8611
+Overhead:             0.00514636
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         1.0636 s
+Average clock cycles: 2.75894e+09
+Average iterations:   4555
+Average speedup:      1.91592
+Theoretical speedup:  63.3949
+Overhead:             0.00468532
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         2.48124 s
+Average clock cycles: 6.43628e+09
+Average iterations:   4561
+Average speedup:      0.822638
+Theoretical speedup:  1
+Overhead:             0.00989117
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         1.49699 s
+Average clock cycles: 3.88316e+09
+Average iterations:   4561
+Average speedup:      1.35697
+Theoretical speedup:  1.90898
+Overhead:             0.00963787
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         1.38541 s
+Average clock cycles: 3.59371e+09
+Average iterations:   4561
+Average speedup:      1.46485
+Theoretical speedup:  3.54583
+Overhead:             0.00953081
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.952667 s
+Average clock cycles: 2.47119e+09
+Average iterations:   4561
+Average speedup:      2.11769
+Theoretical speedup:  5.95778
+Overhead:             0.00977745
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.884435 s
+Average clock cycles: 2.2942e+09
+Average iterations:   4561
+Average speedup:      2.27775
+Theoretical speedup:  6.51145
+Overhead:             0.00985922
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.909838 s
+Average clock cycles: 2.3601e+09
+Average iterations:   4561
+Average speedup:      2.21541
+Theoretical speedup:  6.51145
+Overhead:             0.00994931
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         1.04097 s
+Average clock cycles: 2.70026e+09
+Average iterations:   4561
+Average speedup:      1.94115
+Theoretical speedup:  6.51145
+Overhead:             0.0100755
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         2.90741 s
+Average clock cycles: 7.54175e+09
+Average iterations:   4184
+Average speedup:      0.705457
+Theoretical speedup:  1
+Overhead:             0.00356802
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         9.43416 s
+Average clock cycles: 2.4472e+10
+Average iterations:   4184
+Average speedup:      0.217695
+Theoretical speedup:  1.97847
+Overhead:             0.00549112
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         8.84664 s
+Average clock cycles: 2.29479e+10
+Average iterations:   4184
+Average speedup:      0.232225
+Theoretical speedup:  3.84576
+Overhead:             0.00380238
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         9.3923 s
+Average clock cycles: 2.43634e+10
+Average iterations:   4184
+Average speedup:      0.218708
+Theoretical speedup:  7.18021
+Overhead:             0.00457301
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         11.7719 s
+Average clock cycles: 3.05359e+10
+Average iterations:   4184
+Average speedup:      0.17449
+Theoretical speedup:  12.3269
+Overhead:             0.00599082
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         17.2033 s
+Average clock cycles: 4.4625e+10
+Average iterations:   4184
+Average speedup:      0.119416
+Theoretical speedup:  18.4503
+Overhead:             0.00764876
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         25.5773 s
+Average clock cycles: 6.63468e+10
+Average iterations:   4184
+Average speedup:      0.0803234
+Theoretical speedup:  20.9531
+Overhead:             0.0107452
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/jnlbrng1.mtx
+vector path: ../../resources/vectors/100k_700k/jnlbrng1.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         0.404231 s
+Average clock cycles: 1.04856e+09
+Average iterations:   445
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         0.407499 s
+Average clock cycles: 1.05704e+09
+Average iterations:   888
+Average speedup:      0.966621
+Theoretical speedup:  1
+Overhead:             0.0264462
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         0.456541 s
+Average clock cycles: 1.18426e+09
+Average iterations:   888
+Average speedup:      0.867214
+Theoretical speedup:  2
+Overhead:             0.0237101
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         0.352763 s
+Average clock cycles: 9.15056e+08
+Average iterations:   888
+Average speedup:      1.11574
+Theoretical speedup:  4
+Overhead:             0.0235906
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.511399 s
+Average clock cycles: 1.32656e+09
+Average iterations:   888
+Average speedup:      0.775174
+Theoretical speedup:  8
+Overhead:             0.0249152
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.794332 s
+Average clock cycles: 2.06048e+09
+Average iterations:   888
+Average speedup:      0.502291
+Theoretical speedup:  16
+Overhead:             0.0258331
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.608676 s
+Average clock cycles: 1.57889e+09
+Average iterations:   888
+Average speedup:      0.649452
+Theoretical speedup:  31.9949
+Overhead:             0.0339978
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         0.189849 s
+Average clock cycles: 4.92462e+08
+Average iterations:   888
+Average speedup:      1.95641
+Theoretical speedup:  63.9281
+Overhead:             0.0414858
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         0.712299 s
+Average clock cycles: 1.84768e+09
+Average iterations:   796
+Average speedup:      0.563508
+Theoretical speedup:  1
+Overhead:             0.0256777
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         0.424277 s
+Average clock cycles: 1.10056e+09
+Average iterations:   796
+Average speedup:      0.941549
+Theoretical speedup:  1.99423
+Overhead:             0.0200497
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         0.23173 s
+Average clock cycles: 6.01101e+08
+Average iterations:   796
+Average speedup:      1.70721
+Theoretical speedup:  3.97764
+Overhead:             0.0213366
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.132302 s
+Average clock cycles: 3.43188e+08
+Average iterations:   796
+Average speedup:      2.94306
+Theoretical speedup:  7.91355
+Overhead:             0.0203586
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.088127 s
+Average clock cycles: 2.28599e+08
+Average iterations:   796
+Average speedup:      4.33839
+Theoretical speedup:  14.5742
+Overhead:             0.0184328
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.066866 s
+Average clock cycles: 1.73449e+08
+Average iterations:   796
+Average speedup:      5.62101
+Theoretical speedup:  25.1642
+Overhead:             0.0202401
+Average frequency:    2593.98 MHz
+
+64 threads:
+Average time:         0.0588214 s
+Average clock cycles: 1.52581e+08
+Average iterations:   796
+Average speedup:      6.329
+Theoretical speedup:  48.7042
+Overhead:             0.0206629
+Average frequency:    2593.98 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         0.263188 s
+Average clock cycles: 6.82702e+08
+Average iterations:   445
+Average speedup:      1.48032
+Theoretical speedup:  1
+Overhead:             0.024447
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         0.576326 s
+Average clock cycles: 1.49497e+09
+Average iterations:   445
+Average speedup:      0.690491
+Theoretical speedup:  1.99399
+Overhead:             0.0225105
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         0.631283 s
+Average clock cycles: 1.63753e+09
+Average iterations:   445
+Average speedup:      0.630727
+Theoretical speedup:  3.94846
+Overhead:             0.0237811
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         0.515426 s
+Average clock cycles: 1.337e+09
+Average iterations:   445
+Average speedup:      0.768497
+Theoretical speedup:  7.74344
+Overhead:             0.0261624
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         0.677766 s
+Average clock cycles: 1.75811e+09
+Average iterations:   445
+Average speedup:      0.585151
+Theoretical speedup:  14.8912
+Overhead:             0.032279
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         0.95591 s
+Average clock cycles: 2.47961e+09
+Average iterations:   445
+Average speedup:      0.415071
+Theoretical speedup:  27.6551
+Overhead:             0.0444635
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         1.00432 s
+Average clock cycles: 2.60518e+09
+Average iterations:   445
+Average speedup:      0.393777
+Theoretical speedup:  48.3965
+Overhead:             0.054985
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/bcsstk18.mtx
+vector path: ../../resources/vectors/100k_700k/bcsstk18.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         53.892 s
+Average clock cycles: 1.39794e+11
+Average iterations:   147446
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         49.012 s
+Average clock cycles: 1.27136e+11
+Average iterations:   146814
+Average speedup:      1.09942
+Theoretical speedup:  1
+Overhead:             0.000124622
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         58.6159 s
+Average clock cycles: 1.52048e+11
+Average iterations:   146814
+Average speedup:      0.919313
+Theoretical speedup:  1.99901
+Overhead:             0.000114027
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         45.5268 s
+Average clock cycles: 1.18095e+11
+Average iterations:   146814
+Average speedup:      1.18358
+Theoretical speedup:  3.98871
+Overhead:             0.000112582
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         68.4967 s
+Average clock cycles: 1.77678e+11
+Average iterations:   146814
+Average speedup:      0.786709
+Theoretical speedup:  7.94299
+Overhead:             0.000118709
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         66.4728 s
+Average clock cycles: 1.72429e+11
+Average iterations:   146814
+Average speedup:      0.810653
+Theoretical speedup:  15.7484
+Overhead:             0.000127725
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         60.4667 s
+Average clock cycles: 1.56849e+11
+Average iterations:   146814
+Average speedup:      0.891162
+Theoretical speedup:  30.8356
+Overhead:             0.000132755
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         61.4912 s
+Average clock cycles: 1.59506e+11
+Average iterations:   146814
+Average speedup:      0.876305
+Theoretical speedup:  58.6969
+Overhead:             0.000146987
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         48.3592 s
+Average clock cycles: 1.25442e+11
+Average iterations:   147657
+Average speedup:      1.11429
+Theoretical speedup:  1
+Overhead:             0.000131252
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         47.0127 s
+Average clock cycles: 1.2195e+11
+Average iterations:   147657
+Average speedup:      1.1462
+Theoretical speedup:  1.91724
+Overhead:             0.000124179
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         24.7539 s
+Average clock cycles: 6.42108e+10
+Average iterations:   147657
+Average speedup:      2.17665
+Theoretical speedup:  3.53411
+Overhead:             0.000126575
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         16.9965 s
+Average clock cycles: 4.40883e+10
+Average iterations:   147657
+Average speedup:      3.1698
+Theoretical speedup:  6.06476
+Overhead:             0.000124159
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         13.1104 s
+Average clock cycles: 3.40081e+10
+Average iterations:   147657
+Average speedup:      4.10896
+Theoretical speedup:  8.65896
+Overhead:             0.000128336
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         12.5963 s
+Average clock cycles: 3.26745e+10
+Average iterations:   147657
+Average speedup:      4.2766
+Theoretical speedup:  10.3255
+Overhead:             0.000129643
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         15.4763 s
+Average clock cycles: 4.0145e+10
+Average iterations:   147657
+Average speedup:      3.48105
+Theoretical speedup:  10.3255
+Overhead:             0.000131848
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         64.7346 s
+Average clock cycles: 1.6792e+11
+Average iterations:   147446
+Average speedup:      0.832416
+Theoretical speedup:  1
+Overhead:             0.000130585
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         99.0054 s
+Average clock cycles: 2.56817e+11
+Average iterations:   147446
+Average speedup:      0.544301
+Theoretical speedup:  1.98879
+Overhead:             0.000110243
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         91.5791 s
+Average clock cycles: 2.37554e+11
+Average iterations:   147446
+Average speedup:      0.588433
+Theoretical speedup:  3.90728
+Overhead:             0.000117194
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         158.914 s
+Average clock cycles: 4.12219e+11
+Average iterations:   147446
+Average speedup:      0.339111
+Theoretical speedup:  7.4093
+Overhead:             0.000130317
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         200.963 s
+Average clock cycles: 5.21292e+11
+Average iterations:   147446
+Average speedup:      0.268158
+Theoretical speedup:  12.5149
+Overhead:             0.000156358
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         259.146 s
+Average clock cycles: 6.72217e+11
+Average iterations:   147446
+Average speedup:      0.207951
+Theoretical speedup:  15.1869
+Overhead:             0.000206017
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         462.01 s
+Average clock cycles: 1.19844e+12
+Average iterations:   147446
+Average speedup:      0.116643
+Theoretical speedup:  16.0588
+Overhead:             0.000266807
+Average frequency:    2593.97 MHz
+
+matrix path: ../../resources/matrices/100k_700k/cbuckle.mtx
+vector path: ../../resources/vectors/100k_700k/cbuckle.vec
+Initializing color vectors
+
+Running Gauss-Seidel
+Running Gauss-Seidel with graph coloring: 1 threads
+Running Gauss-Seidel with graph coloring: 2 threads
+Running Gauss-Seidel with graph coloring: 4 threads
+Running Gauss-Seidel with graph coloring: 8 threads
+Running Gauss-Seidel with graph coloring: 16 threads
+Running Gauss-Seidel with graph coloring: 32 threads
+Running Gauss-Seidel with graph coloring: 64 threads
+Running Gauss-Seidel with block coloring: 1 threads, block size = 128
+Running Gauss-Seidel with block coloring: 2 threads, block size = 128
+Running Gauss-Seidel with block coloring: 4 threads, block size = 128
+Running Gauss-Seidel with block coloring: 8 threads, block size = 128
+Running Gauss-Seidel with block coloring: 16 threads, block size = 128
+Running Gauss-Seidel with block coloring: 32 threads, block size = 128
+Running Gauss-Seidel with block coloring: 64 threads, block size = 128
+Running Gauss-Seidel with dependency graph: 1 threads
+Running Gauss-Seidel with dependency graph: 2 threads
+Running Gauss-Seidel with dependency graph: 4 threads
+Running Gauss-Seidel with dependency graph: 8 threads
+Running Gauss-Seidel with dependency graph: 16 threads
+Running Gauss-Seidel with dependency graph: 32 threads
+Running Gauss-Seidel with dependency graph: 64 threads
+
+Standard Gauss-Seidel:
+Average time:         107.583 s
+Average clock cycles: 2.79068e+11
+Average iterations:   81731
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with graph coloring:
+
+1 threads:
+Average time:         92.2658 s
+Average clock cycles: 2.39335e+11
+Average iterations:   70642
+Average speedup:      1.16586
+Theoretical speedup:  1
+Overhead:             0.000114603
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         128.781 s
+Average clock cycles: 3.34055e+11
+Average iterations:   70642
+Average speedup:      0.835323
+Theoretical speedup:  1.99888
+Overhead:             0.000104595
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         53.4954 s
+Average clock cycles: 1.38766e+11
+Average iterations:   70642
+Average speedup:      2.01064
+Theoretical speedup:  3.9898
+Overhead:             0.000108256
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         53.1262 s
+Average clock cycles: 1.37808e+11
+Average iterations:   70642
+Average speedup:      2.0246
+Theoretical speedup:  7.95722
+Overhead:             0.000110131
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         36.987 s
+Average clock cycles: 9.59432e+10
+Average iterations:   70642
+Average speedup:      2.90769
+Theoretical speedup:  15.6997
+Overhead:             0.000116136
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         28.6923 s
+Average clock cycles: 7.4427e+10
+Average iterations:   70642
+Average speedup:      3.74789
+Theoretical speedup:  30.5562
+Overhead:             0.000118629
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         27.6731 s
+Average clock cycles: 7.17833e+10
+Average iterations:   70642
+Average speedup:      3.88565
+Theoretical speedup:  57.7675
+Overhead:             0.000131757
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with block coloring (block size = 128):
+
+1 threads:
+Average time:         108.201 s
+Average clock cycles: 2.8067e+11
+Average iterations:   84229
+Average speedup:      0.994144
+Theoretical speedup:  1
+Overhead:             0.00017669
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         57.6967 s
+Average clock cycles: 1.49664e+11
+Average iterations:   84229
+Average speedup:      1.86412
+Theoretical speedup:  1.95004
+Overhead:             0.000168717
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         30.7221 s
+Average clock cycles: 7.96922e+10
+Average iterations:   84229
+Average speedup:      3.50001
+Theoretical speedup:  3.71281
+Overhead:             0.000168252
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         20.3402 s
+Average clock cycles: 5.27619e+10
+Average iterations:   84229
+Average speedup:      5.28507
+Theoretical speedup:  7.13541
+Overhead:             0.000164656
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         12.7873 s
+Average clock cycles: 3.31699e+10
+Average iterations:   84229
+Average speedup:      8.40286
+Theoretical speedup:  11.9926
+Overhead:             0.000172598
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         8.62298 s
+Average clock cycles: 2.23678e+10
+Average iterations:   84229
+Average speedup:      12.4534
+Theoretical speedup:  21.3257
+Overhead:             0.00017222
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         6.84817 s
+Average clock cycles: 1.77639e+10
+Average iterations:   84229
+Average speedup:      15.6735
+Theoretical speedup:  35.5312
+Overhead:             0.000172015
+Average frequency:    2593.97 MHz
+
+Parallel Gauss-Seidel with dependency graph:
+
+1 threads:
+Average time:         142.608 s
+Average clock cycles: 3.69922e+11
+Average iterations:   81731
+Average speedup:      0.754348
+Theoretical speedup:  1
+Overhead:             8.40766e-05
+Average frequency:    2593.97 MHz
+
+2 threads:
+Average time:         175.853 s
+Average clock cycles: 4.56158e+11
+Average iterations:   81731
+Average speedup:      0.611748
+Theoretical speedup:  1.90562
+Overhead:             8.17014e-05
+Average frequency:    2593.97 MHz
+
+4 threads:
+Average time:         309.835 s
+Average clock cycles: 8.03704e+11
+Average iterations:   81731
+Average speedup:      0.347216
+Theoretical speedup:  3.42629
+Overhead:             9.14979e-05
+Average frequency:    2593.97 MHz
+
+8 threads:
+Average time:         340.078 s
+Average clock cycles: 8.82153e+11
+Average iterations:   81731
+Average speedup:      0.316337
+Theoretical speedup:  5.59681
+Overhead:             0.000115486
+Average frequency:    2593.97 MHz
+
+16 threads:
+Average time:         455.261 s
+Average clock cycles: 1.18094e+12
+Average iterations:   81731
+Average speedup:      0.236302
+Theoretical speedup:  8.1981
+Overhead:             0.00016383
+Average frequency:    2593.97 MHz
+
+32 threads:
+Average time:         640.329 s
+Average clock cycles: 1.661e+12
+Average iterations:   81731
+Average speedup:      0.168006
+Theoretical speedup:  8.1981
+Overhead:             0.000241132
+Average frequency:    2593.97 MHz
+
+64 threads:
+Average time:         1072.84 s
+Average clock cycles: 2.78293e+12
+Average iterations:   81731
+Average speedup:      0.100275
+Theoretical speedup:  8.1981
+Overhead:             0.000383672
+Average frequency:    2593.97 MHz
+
