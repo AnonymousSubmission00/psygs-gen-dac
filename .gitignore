@@ -1,0 +1,15 @@
+.idea
+.bsp
+.vscode
+.metals
+*.DS_Store
+*.iml
+*build.properties
+*.exe
+resources/matrices/1M_5M/
+resources/matrices/8M_more/
+resources/vectors/1M_5M/
+resources/vectors/8M_more/
+target
+test_run_dir
+chisel_test*
