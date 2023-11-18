@@ -12,7 +12,8 @@ dependency-free data preprocessed with coloring algorithms.
 
 ## Requirements:
 * Scala 2.13.10
-* Scala sbt 1.8.3\
+* Scala sbt 1.8.3
+
 The specified version numbers grant the best compatibility
 
 ## Chisel tests
