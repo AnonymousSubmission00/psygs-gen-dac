@@ -1,11 +1,10 @@
-package sygs
-package pe.ag
+package sygs.pe.ag
 
 import chisel3._
 import chisel3.util._
 import spatial_templates._
 import sygs.pe.ag.submodules._
-import sygs.pe.dfe.SyGSDFEIO
+import sygs.pe.dfe._
 
 /**
   * This module contains the three submodules to handle the communication
@@ -38,7 +37,7 @@ class SyGSAddressGeneratorIO(numberOfAccumulators: Int,
   val variablesMemRequests = Vec(numberOfAccumulators, Vec(2, Decoupled(
     new MemRequestIO(exp + sign, log2Up(variablesMemBanks) + variablesMemAddressWidth))))
 
-  val dataFlowEngineIO = Flipped(new SyGSDFEIO(numberOfAccumulators, multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign))
+  val dataFlowEngineIO = Flipped(new SyGSDFEIO(numberOfAccumulators, exp, sign))
 
   val computing = Output(Bool())
   val busy = Output(Bool())

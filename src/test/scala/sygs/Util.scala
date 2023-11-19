@@ -2,7 +2,6 @@ package sygs
 
 import chisel3._
 import chiseltest._
-
 object Util {
 
   def intToUInt(i: Int): UInt = {
@@ -49,19 +48,19 @@ object Util {
     java.lang.Double.longBitsToDouble(xSigned.longValue)
   }
 
-  def check(wire: Bits, expected: UInt): Unit = {
+  def check(wire: Bits, expected: UInt) {
 
     val value = wire.peek()
     assert((value.litValue - expected.litValue).abs < 1000)
   }
 
-  def checkFloat(wire: Bits, expected: Float): Unit = {
+  def checkFloat(wire: Bits, expected: Float) {
 
     val value = wire.peek()
     assert((bigIntToFloat(value.litValue) - expected).abs < 1e-40f)
   }
 
-  def checkDouble(wire: Bits, expected: Double): Unit =  {
+  def checkDouble(wire: Bits, expected: Double) {
 
     val value = wire.peek()
     assert((bigIntToDouble(value.litValue) - expected).abs < 1000)

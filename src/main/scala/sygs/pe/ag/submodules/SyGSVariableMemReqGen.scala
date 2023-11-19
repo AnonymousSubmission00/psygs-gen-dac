@@ -1,10 +1,9 @@
-package sygs
-package pe.ag.submodules
+package sygs.pe.ag.submodules
 
 import chisel3._
 import chisel3.util._
 import spatial_templates._
-import sygs.pe.ag.SyGSAddressGenerator
+import sygs.pe.ag._
 
 /**
   * This module sends requests to the variable memory interface to get the vector x's component

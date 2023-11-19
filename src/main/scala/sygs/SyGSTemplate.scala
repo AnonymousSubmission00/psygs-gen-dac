@@ -3,7 +3,7 @@ package sygs
 import chisel3._
 import chisel3.util._
 import spatial_templates._
-import sygs.pe.SyGSPE
+import sygs.pe._
 
 /**
   * This is the complete Template of our architecture.
@@ -26,7 +26,8 @@ class SyGSTemplate(val numberOfPEs: Int,
                    val floatSignWidth: Int,
                    val memReqQsize: Int,
                    val memRespQsize: Int,
-                   val use_bb: Boolean) extends Module {
+                   val useBlackBoxBRAM: Boolean,
+                   val useFixedPointAccumulator: Boolean) extends Module {
 
   val ctrl_io = IO(new RoCCControllerIO(numberOfPEs))
 
@@ -36,10 +37,10 @@ class SyGSTemplate(val numberOfPEs: Int,
 
   private val pes = Seq.fill(numberOfPEs)(Module(
     new SyGSPE(accumulatorPerPE, inverterPerPE, variablesMemBanks, accumulatorMemAddressWidth, variablesMemAddressWidth,
-      multiplierQueueSizeDFE, accumulatorQueueSizeDFE, useBlackBoxAdder64, dividerQueueSizeDFE, metadataQueueSizeAG, columnIndicesQueueSizeAG, floatExpWidth, floatSignWidth, memRespQsize)))
+      multiplierQueueSizeDFE, accumulatorQueueSizeDFE, useBlackBoxAdder64, dividerQueueSizeDFE, metadataQueueSizeAG, columnIndicesQueueSizeAG, floatExpWidth, floatSignWidth, memRespQsize, useFixedPointAccumulator)))
   controller.connectPEs(pes)
 
-  private val brams = if(use_bb) {
+  private val brams = if(useBlackBoxBRAM) {
     Seq.fill(variablesMemBanks)(Module(
     new BRAMLikeMem2(new ElemId(1, 0, 0, 0), floatExpWidth + floatSignWidth, variablesMemAddressWidth)))
   } else {
@@ -59,7 +60,7 @@ class SyGSTemplate(val numberOfPEs: Int,
 
     for(a <- 0 until accumulatorPerPE) {
 
-      val bram = if(use_bb) {
+      val bram = if(useBlackBoxBRAM) {
         Module(
         new BRAMLikeMem2(new ElemId(1, 0, 0, 0), floatExpWidth + floatSignWidth, accumulatorMemAddressWidth))
       } else {

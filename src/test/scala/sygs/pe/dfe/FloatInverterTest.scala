@@ -1,12 +1,11 @@
-package sygs
-package pe.dfe
+package sygs.pe.dfe
 
 import chisel3._
 import chiseltest._
 import chiseltest.simulator.WriteVcdAnnotation
 import org.scalatest.flatspec.AnyFlatSpec
-import sygs.pe.dfe.submodules.FloatInverter
-import Util._
+import sygs.pe.dfe.submodules._
+import sygs.Util._
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random

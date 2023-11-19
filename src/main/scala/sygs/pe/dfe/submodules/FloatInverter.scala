@@ -1,10 +1,9 @@
-package sygs
-package pe.dfe.submodules
+package sygs.pe.dfe.submodules
 
 import chisel3._
 import chisel3.util._
-import spatial_templates._
 import spatial_templates.Arithmetic.FloatArithmetic._
+import spatial_templates._
 
 /**
   * This module implements the reciprocal operation on Floating Point

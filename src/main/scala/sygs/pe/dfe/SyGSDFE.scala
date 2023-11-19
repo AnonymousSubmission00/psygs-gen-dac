@@ -1,5 +1,4 @@
-package sygs
-package pe.dfe
+package sygs.pe.dfe
 
 import chisel3._
 import chisel3.util._
@@ -12,9 +11,6 @@ import sygs.pe.dfe.submodules._
   * It executes the actual computation of the Gauss-Seidel algorithm's formula
   */
 class SyGSDFEIO(numberOfAccumulators: Int,
-                multiplierQueueSize: Int,
-                accumulatorQueueSize: Int,
-                dividerQueueSize: Int,
                 exp: Int,
                 sign: Int) extends Bundle {
 
@@ -37,7 +33,8 @@ class SyGSDFE(val numberOfAccumulators: Int,
               dividerQueueSize: Int,
               exp: Int,
               sign: Int,
-              useBlackBoxAdder64: Boolean) extends Module {
+              useBlackBoxAdder64: Boolean,
+              useFixedPointAccumulator: Boolean) extends Module {
 
   assert(numberOfAccumulators > 0)
   assert(numberOfInverters > 0)
@@ -49,10 +46,12 @@ class SyGSDFE(val numberOfAccumulators: Int,
   assert(accumulatorQueueSize > 0)
   assert(dividerQueueSize > 0)
 
-  val io = IO(new SyGSDFEIO(numberOfAccumulators, multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign))
+  val io = IO(new SyGSDFEIO(numberOfAccumulators, exp, sign))
 
   //instantiate Modules
-  private val multiplyAccumulators = Seq.fill(numberOfAccumulators)(Module(new FloatMultiplyAccumulator(multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign, useBlackBoxAdder64)))
+  private val multiplyAccumulators = Seq.fill(numberOfAccumulators)(Module(
+    if (useFixedPointAccumulator) new FixedMultiplyAccumulator(multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign, useBlackBoxAdder64)
+    else new FloatMultiplyAccumulator(multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign, useBlackBoxAdder64)))
 
   multiplyAccumulators.zipWithIndex.foreach { case (m, i) =>
 

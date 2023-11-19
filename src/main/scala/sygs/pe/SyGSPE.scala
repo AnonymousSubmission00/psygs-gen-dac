@@ -1,11 +1,10 @@
-package sygs
-package pe
+package sygs.pe
 
 import chisel3._
 import chisel3.util._
 import spatial_templates._
-import sygs.pe.ag.SyGSAddressGenerator
-import sygs.pe.dfe.SyGSDFE
+import sygs.pe.ag._
+import sygs.pe.dfe._
 
 /**
   * This module represents the basic Processing Element.
@@ -31,7 +30,8 @@ class SyGSPE(numberOfAccumulators: Int,
              columnIndicesQueueSize: Int,
              exp: Int,
              sign: Int,
-             memRespQsize: Int
+             memRespQsize: Int,
+             useFixedPointAccumulator: Boolean,
             )
   extends DataflowPE(new ElemId(1, 0, 0, 0), new CtrlInterfaceIO(), exp + sign,
     Math.max(accumulatorMemAddressWidth, log2Up(variablesMemBanks) + variablesMemAddressWidth),
@@ -49,7 +49,7 @@ class SyGSPE(numberOfAccumulators: Int,
   addressGenerator.io.canProceed := coordination_io.canProceed
   addressGenerator.io.backwards := backwardsReg || (io.ctrl_cmd.bits === 1.U && io.ctrl_cmd.valid)
 
-  private val dataFlowEngine = Module(new SyGSDFE(numberOfAccumulators, numberOfInverters, multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign, useBlackBoxAdder64))
+  private val dataFlowEngine = Module(new SyGSDFE(numberOfAccumulators, numberOfInverters, multiplierQueueSize, accumulatorQueueSize, dividerQueueSize, exp, sign, useBlackBoxAdder64, useFixedPointAccumulator))
   addressGenerator.io.dataFlowEngineIO <> dataFlowEngine.io
 
   //connect requests and responses

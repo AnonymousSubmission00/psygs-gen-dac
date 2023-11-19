@@ -1,5 +1,4 @@
-package sygs
-package pe
+package sygs.pe
 
 import chisel3._
 import chisel3.util._
@@ -7,7 +6,7 @@ import chiseltest._
 import chiseltest.simulator.WriteVcdAnnotation
 import org.scalatest.flatspec.AnyFlatSpec
 import spatial_templates._
-import Util._
+import sygs.Util._
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
@@ -34,7 +33,7 @@ class SyGSPETestModule(val numberOfPEs: Int,
 
   private val pes = Seq.fill(numberOfPEs)(Module(
     new SyGSPE(accumulatorPerPE, inverterPerPE, variablesMemBanks, accumulatorMemAddressWidth, variablesMemAddressWidth,
-      10, 10, false, 10, 2, 8, exp, sign, 3)))
+      10, 10, false, 10, 2, 8, exp, sign, 3, false)))
 
   private val canProceed = Reg(Bool())
   when(!pes.map(pe => pe.coordination_io.computing).reduce(_ || _)) {

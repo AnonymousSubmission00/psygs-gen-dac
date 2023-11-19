@@ -6,7 +6,7 @@ import chiseltest._
 import chiseltest.simulator.WriteVcdAnnotation
 import org.scalatest.flatspec.AnyFlatSpec
 import spatial_templates._
-import sygs.pe.SyGSPE
+import sygs.pe._
 import sygs.Util._
 
 import scala.collection.mutable.ListBuffer
@@ -29,7 +29,7 @@ class SyGSControllerTestModule(val numberOfPEs: Int,
 
   private val pes = Seq.fill(numberOfPEs)(Module(
     new SyGSPE(accumulatorPerPE, inverterPerPe, variablesMemBanks, accumulatorMemAddressWidth, variablesMemAddressWidth,
-      10, 10, false, 10, 2, 8, exp, sig, 3)))
+      10, 10, false, 10, 2, 8, exp, sig, 3, false)))
   controller.connectPEs(pes)
 
   private val brams = Seq.fill(variablesMemBanks)(Module(

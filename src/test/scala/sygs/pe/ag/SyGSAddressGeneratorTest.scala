@@ -1,5 +1,4 @@
-package sygs
-package pe.ag
+package sygs.pe.ag
 
 import chisel3._
 import chiseltest._
@@ -7,7 +6,7 @@ import chiseltest.simulator.WriteVcdAnnotation
 import org.scalatest.flatspec.AnyFlatSpec
 import spatial_templates._
 import sygs.pe.dfe._
-import Util._
+import sygs.Util._
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
@@ -28,7 +27,7 @@ class SyGSAddressGeneratorTestModule(val numberOfAccumulators: Int,
     val accumulatorBramIOs = Vec(numberOfAccumulators, new BRAMLikeIO(exp + sign, accumulatorMemAddressWidth))
     val variableBramIOs = Vec(variablesMemBanks, new BRAMLikeIO(exp + sign, variablesMemAddressWidth))
 
-    val dataFlowEngineIO = Flipped(new SyGSDFEIO(numberOfAccumulators, 10, 10, 10, exp, sign))
+    val dataFlowEngineIO = Flipped(new SyGSDFEIO(numberOfAccumulators, exp, sign))
 
     val busy = Output(Bool())
   })
@@ -39,7 +38,7 @@ class SyGSAddressGeneratorTestModule(val numberOfAccumulators: Int,
   addressGenerator.io.start := io.start
   addressGenerator.io.backwards := io.backwards
 
-  private val dataFlowEngine = Module(new SyGSDFE(numberOfAccumulators, numberOfInverters, 10, 10, 10, exp, sign, false))
+  private val dataFlowEngine = Module(new SyGSDFE(numberOfAccumulators, numberOfInverters, 10, 10, 10, exp, sign, false, false))
   addressGenerator.io.dataFlowEngineIO <> dataFlowEngine.io
 
   private val busyReg = RegInit(Bool(), false.B)

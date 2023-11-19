@@ -1,8 +1,8 @@
-package sygs
-package pe.dfe.submodules
+package sygs.pe.dfe.submodules
 
 import chisel3._
 import chisel3.util._
+
 import java.io.File
 
 class FloatAdderBlackBox64 extends HasBlackBoxPath {

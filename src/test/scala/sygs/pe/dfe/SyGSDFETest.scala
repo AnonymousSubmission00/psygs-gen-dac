@@ -1,5 +1,4 @@
-package sygs
-package pe.dfe
+package sygs.pe.dfe
 
 import chisel3._
 import chisel3.util._
@@ -7,7 +6,7 @@ import chiseltest._
 import chiseltest.simulator.WriteVcdAnnotation
 import org.scalatest.flatspec.AnyFlatSpec
 import spatial_templates._
-import Util._
+import sygs.Util._
 
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
@@ -16,7 +15,7 @@ class SyGSDFETest extends AnyFlatSpec with ChiselScalatestTester {
 
   behavior of "dataflow engine"
   it should "produce the right results" in
-    test(new SyGSDFE(1, 1, 10, 10, 10, 11, 53, false))
+    test(new SyGSDFE(1, 1, 10, 10, 10, 11, 53, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.io.out.ready.poke(true.B)
@@ -88,7 +87,7 @@ class SyGSDFETest extends AnyFlatSpec with ChiselScalatestTester {
         }
     }
   it should "work under heavy workload" in
-    test(new SyGSDFE(1, 4, 10, 10, 10, 11, 53, false))
+    test(new SyGSDFE(1, 4, 10, 10, 10, 11, 53, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.io.out.ready.poke(true.B)
@@ -234,7 +233,7 @@ class SyGSDFETest extends AnyFlatSpec with ChiselScalatestTester {
         }
       }
   it should "work with random latencies" in
-    test(new SyGSDFE(1, 2, 10, 10, 10, 11, 53, false))
+    test(new SyGSDFE(1, 2, 10, 10, 10, 11, 53, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.io.out.ready.poke(true.B)
@@ -385,7 +384,7 @@ class SyGSDFETest extends AnyFlatSpec with ChiselScalatestTester {
         }
       }
   it should "work with multiple accumulators" in
-    test(new SyGSDFE(2, 1, 10, 10, 10, 11, 53, false))
+    test(new SyGSDFE(2, 1, 10, 10, 10, 11, 53, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.io.out.ready.poke(true.B)

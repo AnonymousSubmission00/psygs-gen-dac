@@ -13,7 +13,7 @@ class SyGSTemplateTest extends AnyFlatSpec with ChiselScalatestTester {
 
   behavior of "template"
   it should "write and read memory" in
-    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false))
+    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.clock.setTimeout(10)
@@ -36,19 +36,19 @@ class SyGSTemplateTest extends AnyFlatSpec with ChiselScalatestTester {
         }
       }
   it should "produce the right results (forward)" in
-    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false))
+    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         test(c, backwards = false, 2, 2, 4)
       }
   it should "produce the right results (backward)" in
-    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false))
+    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         test(c, backwards = true, 2, 4, 4)
       }
   it should "work with smol matrix" in
-    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false))
+    test(new SyGSTemplate(2, 1, 2, 10, 10, false, 10, 10, 10, 4, 16, 8, 11, 53, 10, 10, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.clock.setTimeout(300)
@@ -111,7 +111,7 @@ class SyGSTemplateTest extends AnyFlatSpec with ChiselScalatestTester {
       }
 
   it should "work with test matrix 3x3" in
-    test(new SyGSTemplate(1, 1, 2, 8, 8, false, 2, 2, 8, 4, 17, 12, 11, 53, 8, 8, false))
+    test(new SyGSTemplate(1, 1, 2, 8, 8, false, 2, 2, 8, 4, 17, 12, 11, 53, 8, 8, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.clock.setTimeout(300)
@@ -160,7 +160,7 @@ class SyGSTemplateTest extends AnyFlatSpec with ChiselScalatestTester {
       }
 
   it should "work with test matrix 5x5" in
-    test(new SyGSTemplate(2, 1, 2, 8, 8, false, 2, 2, 8, 4, 17, 12, 11, 53, 8, 8, false))
+    test(new SyGSTemplate(2, 1, 2, 8, 8, false, 2, 2, 8, 4, 17, 12, 11, 53, 8, 8, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.clock.setTimeout(300)
@@ -214,7 +214,7 @@ class SyGSTemplateTest extends AnyFlatSpec with ChiselScalatestTester {
       }
 
   it should "work with test matrix 32x32" in
-    test(new SyGSTemplate(2, 1, 2, 8, 8, false, 8, 2, 8, 4, 17, 12, 11, 53, 8, 8, false))
+    test(new SyGSTemplate(2, 1, 2, 8, 8, false, 8, 2, 8, 4, 17, 12, 11, 53, 8, 8, false, false))
       .withAnnotations(Seq(WriteVcdAnnotation)) { c =>
 
         c.clock.setTimeout(300)
